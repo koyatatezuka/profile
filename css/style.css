@@ -94,6 +94,32 @@ nav ul li {
 	text-align: center;
 }
 
+@media (max-width: 600px) {
+	.info {
+		display: flex;
+		flex-direction: column;
+		background-color: rgb(109, 220, 235);
+		color: rgb(37, 79, 114);
+		width: 80%;
+		margin: 50px auto;
+		padding: 20px;
+		border-radius: 3em;
+		align-items: center;
+		box-shadow: 0px 5px 8px rgb(51, 128, 138);
+	}
+
+	.info img {
+		height: 250px;
+		border-radius: 3em;
+		width: 250px;
+	}
+
+	.about-me {
+		font-size: 0.9em;
+		width: auto;
+	}
+}
+
 /* footer */
 
 footer {
