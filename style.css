@@ -59,7 +59,7 @@ body {
 	position: absolute;
 	z-index: 9;
 	width: 100vw;
-	height: 100vw;
+	height: 200vw;
 	top: 5rem;
 	background: rgba(0, 0, 0, 0.55);
 }
@@ -130,12 +130,29 @@ body {
 	font-size: 0.7rem;
 }
 
+.koyata-icon {
+	display: none;
+	border-radius: 2px;
+	width: auto;
+	height: auto;
+	min-width: 3.5rem;
+	min-height: 3.5rem;
+	background: url("assets/me.jpg");
+	background-size: cover;
+	z-index: 10;
+	margin-right: 2rem;
+}
+
 @media (max-width: 570px) {
+
 	.navigation-list {
 		display: none;
 	}
 
 	.menu {
+		display: block;
+	}
+	.koyata-icon {
 		display: block;
 	}
 }
@@ -243,9 +260,9 @@ body {
 
 /* end of about me */
 
-/* projects */
+/* porfoltio */
 
-#projects {
+#portfolio {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -254,20 +271,21 @@ body {
 	align-items: center;
 }
 
-#projects h1 {
+#portfolio h1 {
 	font-size: 4rem;
 	letter-spacing: 0.5rem;
 	text-transform: uppercase;
 	color: rgba(0, 4, 10);
 	font-weight: 100;
+
 }
 
-#projects h2 {
+#portfolio h2 {
 	letter-spacing: 0.5rem;
 	font-weight: 100;
 }
 
-.project-container {
+.portfolio-container {
 	display: flex;
 	width: 100%;
 	justify-content: space-evenly;
@@ -282,7 +300,7 @@ body {
 	margin-bottom: 8rem;
 }
 
-.project-box {
+.portfolio-box {
 	border-radius: 0.5rem;
 	margin-left: 1rem;
 	margin-top: 2rem;
@@ -294,14 +312,14 @@ body {
 	border-top: 1px solid rgb(240, 138, 6);
 }
 
-.project-item {
+.portfolio-item {
 	list-style: none;
 	letter-spacing: 0.3rem;
 	display: flex;
 	justify-content: center;
 }
 
-.project-item a {
+.portfolio-item a {
 	text-decoration: none;
 	display: flex;
 	margin-top: 1rem;
@@ -311,26 +329,32 @@ body {
 	width: 66%;
 }
 
-.project-item a:hover {
+.portfolio-item a:hover {
 	color: white;
 }
 
-.project-item a img {
+.portfolio-item a img {
 	transition: all 0.5s;
 }
 
-.project-item a img:hover {
+.portfolio-item a img:hover {
 	transform: scale(1.5);
 	border: 1px solid rgb(240, 138, 6);
 }
 
-.project-item img {
+.portfolio-item img {
 	width: 5rem;
 	height: 5rem;
 	margin-top: 0.6rem;
 }
 
-/* end of projects */
+@media(max-width: 530px) {
+	#portfolio h1 {
+		font-size: 3rem;
+	}
+}
+
+/* end of portfolio */
 
 /* contact */
 
