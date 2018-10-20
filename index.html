@@ -1,44 +1,65 @@
-<!DOCTYPE html>
-<html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Koyata</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="icon" href="assets/responsive.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <div class="name-logo">
-            <h2>Koyata Tezuka</h2>
-            <h5>Junior Developer</h5>
+    <!-- navigation -->
+    <nav class="navigation">
+        <!-- hamburger menu -->
+        <div class="menu" >
+            <i class="fas fa-bars" value="closed"></i>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
+        <div class="menu-box">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#about-me">ABOUT ME</a>
                 </li>
-                <li>
-                    <a href="resume.html">RESUME</a>
+                <li class="menu-item">
+                    <a href="#projects">PROJECTS</a>
                 </li>
-                <li>
-                    <a href="projects.html">PROJECTS</a>
+                <li class="menu-item">
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
-        </nav>
-    </header>
-    <main class="info">
-        <div class="image">
-            <img src="assets/me.jpg" alt="picture of koyata tezuka">
+            <p>&copy; 2018 Koyata Tezuka</p>
         </div>
-        <div class="about-me">
-            <h3>About Me</h3>
-            <p>Hello, my name is Koyata Tezuka. I am a self-taught developer who got his start learning from websites like FreeCodeCamp and CodeAcademy. Feel free to look through my pass projects and let me know what you think.</p>
+        <div class="backdrop"></div>
+        <!-- end of hamburger menu -->
+        <ul class="navigation-list">
+            <li class="navigation-item">
+                <a href="#about-me">ABOUT ME</a>
+            </li>
+            <li class="navigation-item">
+                <a href="#projects">PROJECTS</a>
+            </li>
+            <li class="navigation-item">
+                <a href="#contact">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- end navigation -->
+
+    <!-- main content -->
+
+    <!-- about me -->
+
+    <article id="about-me">
+        <div class="about-box picture">
+            <img class="profile-img" src="assets/me.jpg">
+        </div>
+        <div class="about-box info">
+            <h3 id="name">Koyata Tezuka</h3>
+            <p>Hello, my name is
+                <span class="koyata">Koyata Tezuka</span>. I am a self-taught developer who got his start learning from websites like FreeCodeCamp
+                and CodeAcademy. Feel free to look through my past projects and let me know what you think.</p>
             <h3>Languages</h3>
             <span class="icons">
                 <i class="fab fa-html5"></i>
@@ -48,34 +69,130 @@
                 <i class="fab fa-node-js"></i>
                 <i class="fab fa-python"></i>
             </span>
-            <h3>Find Me At</h3>
+            <h3>Follow Me</h3>
             <span class="social-media">
                 <a href="https://www.facebook.com/koyata.tezuka">
                     <i class="fab fa-facebook-square"></i>
                 </a>
                 <a href="https://www.instagram.com/iliveinkailua/">
-                    <i class="fab fa-instagram" style="color:red"></i>
+                    <i class="fab fa-instagram"></i>
                 </a>
                 <a href="https://twitter.com/KoyataT">
-                    <i class="fab fa-twitter-square" style="color:rgb(37, 79, 114)"></i>
+                    <i class="fab fa-twitter-square"></i>
                 </a>
                 <a href="https://github.com/koyatatezuka">
-                    <i class="fab fa-git-square" style="color:black"></i>
+                    <i class="fab fa-git-square"></i>
                 </a>
             </span>
         </div>
-    </main>
-    <footer>
-        <div class="email">
-            <p>Email:</p>
-            <p>XXXXXX@gmail.com</p>
+    </article>
+
+    <!-- end of about me -->
+
+    <!-- projects -->
+    <article id="projects">
+        <h1>Projects</h1>
+        <div class="project-container">
+            <div class="project-box">
+                <h2>JavaScript</h2>
+                <ul>
+                    <li class="project-item">
+                        <a href="https://s3-us-west-1.amazonaws.com/tic-tac-toe-vanilla-javascript/index.html">Tic-Tac-Toe
+                            <img src="assets/tic-tac-toe.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h2>jQuery</h2>
+                <ul>
+                    <li class="project-item">
+                        <a href="https://s3-us-west-1.amazonaws.com/jquery-calculator/index.html">Calculator
+                            <img src="assets/calculator.png">
+                        </a>
+                    </li>
+                    <li class="project-item">
+                        <a href="https://codepen.io/koyatatezuka/pen/KeRaME">Random Quote Generator
+                            <img src="assets/quoteGenerator.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-box">
+                <h2>React</h2>
+                <ul>
+                    <li class="project-item">
+                        <a href="https://react-my-burger-71736.firebaseapp.com/">Burger Builder
+                            <img src="assets/burger-builder.png">
+                        </a>
+                    </li>
+                    <li class="project-item">
+                        <a href="https://codepen.io/koyatatezuka/pen/BPvxxG">Drum Machine
+                            <img src="assets/drumMachine.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="phone">
-            <p>Phone:</p>
-            <p>(XXX) XXX-XXXX</p>
+    </article>
+    <!-- end of projects -->
+
+    <!-- contact -->
+    <article id="contact">
+        <div class="contact-box">
+            <h2>Koyata Tezuka</h2>
+            <p>Developing A Better Tomorrow</p>
         </div>
+        <div class="contact-divider"></div>
+        <div class="contact-box action">
+            <p>Did you enjoy my projects? Need a developer to help on projects? Click the button below</p>
+            <a href="mailto:koytez@gmail.com">Contact</a>
+        </div>
+    </article>
+    <!-- end of contact -->
+
+    <!-- end of main content -->
+
+    <!-- footer -->
+
+    <footer id="footer">
+
+        <div class="footer-box inquries">
+            <h2>Inquries</h2>
+            <p>koytez@gmail.com</p>
+            <p>1(808)999-9999</p>
+            <p>808 Kailua Street</p>
+            <p>Kailua, Hawaii 96734</p>
+            <p class="copyright">&copy; 2018 Koyata Tezuka</p>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-box follow">
+            <h2>Follow</h2>
+            <div class="social-media-footer">
+                <a href="https://www.facebook.com/koyata.tezuka">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/iliveinkailua/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/KoyataT">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="https://github.com/koyatatezuka">
+                    <i class="fab fa-git-square"></i>
+                </a>
+            </div>
+        </div>
+
     </footer>
 
+    <div hidden>Icons made by
+        <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    </div>
+    <!-- end of footer -->
+    <script src="index.js"></script>
 </body>
 
 </html>
